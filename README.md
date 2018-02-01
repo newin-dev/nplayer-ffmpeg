@@ -7,6 +7,3 @@ Supported Architecture
 * x86
 
 
-License
-----
-check files LICENSE.GPLv3 and LICENSE
