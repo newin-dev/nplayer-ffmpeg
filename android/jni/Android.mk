@@ -16,10 +16,7 @@ LOCAL_SHARED_LIBRARIES := libffmpeg #librtmp libsoundtouch libfribidi libiconv l
 include $(BUILD_SHARED_LIBRARY)
 
 $(call import-add-path, $(LOCAL_PATH)/modules)
+$(call import-module,openssl)
+$(call import-module,bz2)
 $(call import-module,FFmpeg)
-#$(call import-module,librtmp)
-#$(call import-module,soundtouch)
-#$(call import-module,fribidi)
-#$(call import-module,libiconv)
-#$(call import-module,libcifs)
 
