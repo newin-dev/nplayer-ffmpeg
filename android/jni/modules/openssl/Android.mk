@@ -1,13 +1,14 @@
+
 LOCAL_PATH:= $(call my-dir)
- 
+LOCAL_EXPORT_C_INCLUDES := $(LOCAL_PATH)/build/Android/$(TARGET_ARCH_ABI)/include 
 include $(CLEAR_VARS)
 LOCAL_MODULE    := libssl.a
-LOCAL_SRC_FILES := $(TARGET_ARCH_ABI)/lib/libssl.a
+LOCAL_SRC_FILES := build/Android/$(TARGET_ARCH_ABI)/lib/libssl.a
 include $(PREBUILT_STATIC_LIBRARY)
 
 include $(CLEAR_VARS)
 LOCAL_MODULE    := libcrypto.a
-LOCAL_SRC_FILES := $(TARGET_ARCH_ABI)/lib/libcrypto.a
+LOCAL_SRC_FILES := build/Android/$(TARGET_ARCH_ABI)/lib/libcrypto.a
 include $(PREBUILT_STATIC_LIBRARY)
 
 # Merge all static libraries.
